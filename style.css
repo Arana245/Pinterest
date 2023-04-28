@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&family=Rubik+Iso&display=swap');
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: calc(100% - 4rem);
+}
+.footer {
+  height: 4rem;
+  background-color: #e2e2e2
+}
+
+.heather{
+    background-color: lightgoldenrodyellow;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px, 10%;
+    border-radius: 50px;
+}
+
+.heather.logo img{
+    cursor: pointer;
+}
+
+.heather.logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0;
+}
+
+.heather .nav-links{
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: fl;
+}
+
+.heather .nav-links li{
+    display: inline-block;
+    padding: 0 10px;
+
+}
+
+.heather .nav-links a{
+    font-size: 700;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+
+.heather .btn button{
+    font-weight: 700;
+    padding: 3px 3px;
+    background: red;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+.heather .btn button:hover{
+    background-color:red;
+    color: lightcoral;
+    transform: scale(1.1);
+}
+
+html{
+    cursor: url("./puntero.png"),
+    default;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    justify-content: center;
+
+    margin: 0 auto;
+
+}
+
+
+.grid-item{
+    width: 230px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+    
+}
+
+.grid-item:hover{
+    filter: opacity(0.9);
+}
+
+.buscar{
+    position: absolute;
+    padding: 5px;
+    display: flex;
+    
+}
+
+.buscar input{
+    width: 0px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+
+}
+
+.btn2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+ 
+    
+
+
+}
+
+
+.buscar:hover input{
+    width: 240px;
+}
+.buscar input:focus{
+    width: 240px;
+
+
+}
+
+footer{
+    display: flex;
+    
+}
